@@ -1,0 +1,21 @@
+# --- STT server ---
+numpy
+websockets>=13
+faster-whisper>=1.0
+mlx-whisper; sys_platform == "darwin" and platform_machine == "arm64"   # Apple Silicon GPU backend
+
+# --- macOS client ---
+sounddevice
+pynput
+pyobjc-framework-ApplicationServices; sys_platform == "darwin"
+pyobjc-framework-Quartz; sys_platform == "darwin"
+pyobjc-framework-Cocoa; sys_platform == "darwin"
+
+# --- LiveKit agent + client link ---
+livekit>=1.0
+livekit-api>=1.0
+livekit-agents[openai]>=1.8
+
+# --- benchmarks / tests ---
+jiwer
+pytest

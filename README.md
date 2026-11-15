@@ -5,6 +5,7 @@ appears at your cursor in any app. Hold a different key to give a spoken
 command ("fix the grammar", "summarize what I just said"), and a tool-calling
 LLM agent edits your text in place.
 
+Architecture inspired by [BiteFlow](https://github.com/smallest-inc/BiteFlow) (MIT).
 Voxly uses open-source Whisper with streaming partials, a LiveKit Agents
 orchestration layer, and Accessibility-API text insertion.
 
@@ -107,3 +108,6 @@ python -m pytest tests -q     # streaming logic + server, with a fake Whisper
 - English-only models by default.
 - Latency numbers are single-user, single-machine measurements.
 
+## License
+
+MIT
